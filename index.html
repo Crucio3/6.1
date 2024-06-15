@@ -13,7 +13,9 @@
         <div class="mobile-menu__content">
           <header class="mobile-menu__header menu-header">
             <div class="menu-header__burger flex-button">
-              <button class="menu-close button-style"><img src="./img/burger-close.svg" alt=""></button>
+              <button class="menu-close button-style">
+                <img src="./img/burger-close.svg" alt="">
+              </button>
             </div>
             <div class="menu-header__group flex-button">
               <img src="img/Group.svg" alt="">
@@ -62,7 +64,7 @@
             <div class="mobile-menu__footer footer-menu">
               <div class="footer-menu__icons">
                 <div class="footer__call flex-button">
-                  <img src="img/call.svg" alt="">
+                  <button class="call-open button-style"><img src="./img/call.svg" alt=""></button>
                 </div>
                 <div class="footer-menu__chat flex-button">
                   <img src="img/chat.svg" alt="">
@@ -107,7 +109,7 @@
             <img src="./img/Group.svg" alt="">
           </div>
           <div class="header__call header__icon">
-            <img src="./img/call.svg" alt="">
+            <button class="call-open button-style"><img src="./img/call.svg" alt=""></button>
           </div>
           <div class="header__chat header__icon">
             <img src="./img/chat.svg" alt="">
@@ -333,6 +335,27 @@
           </p>
         </div>
       </div>
+      <form action="" class="call">
+        <div class="call__close flex-button">
+          <button class="call-close button-style">
+            <img src="./img/burger-close.svg">
+          </button>
+        </div>
+
+        <h2 class="call__title">Заказать звонок</h2>
+        <input type="tel" placeholder="Телефон" class="call__tel">
+        <p class="call__inform">
+          Нажимая “отправить”, вы даете согласие на
+          <span class="call__warning">обработку персональных данных</span> и
+          соглашаетесь с нашей
+          <span class="call__warning">политикой конфиденциальности</span>
+        </p>
+        <div class="call__button-position">
+          <button type="submit" class="call__submit">
+            <div class="call__submit-text">ОТПРАВИТЬ</div>
+          </button>
+        </div>
+      </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
