@@ -1414,7 +1414,7 @@ li {
     .call {
       width: 400px; }
       .call__close {
-        position: relative;
+        position: fixed;
         right: 70px; } }
 
 .open-call {
