@@ -1,0 +1,23 @@
+.swiper-title {
+  margin: 0;
+  padding: 0;
+  padding: 16px;
+  font-size: 16px;
+
+  line-height: 24px;
+  white-space: -0.2px;
+  font-weight: 400;
+  color: #7e7e82;
+  background: linear-gradient(to right, #f8f8f8 0%, white 80%);
+  border-top: 1px solid #d9fff5;
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}

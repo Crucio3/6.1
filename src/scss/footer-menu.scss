@@ -1,0 +1,47 @@
+.footer-menu {
+  &__icons {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+
+  &__position-mail {
+    padding-bottom: 12px;
+  }
+
+  &__mail {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__position-number {
+    padding-bottom: 40px;
+  }
+
+  &__phone-number {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-weight: 800;
+    color: black;
+    text-decoration: none;
+  }
+
+  &__lang-change {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__lang {
+    transition-duration: 0.8s;
+
+    .radio-button:checked + & {
+      opacity: 0.5;
+      transition-duration: 0.8s;
+    }
+  }
+}

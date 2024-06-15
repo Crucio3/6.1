@@ -1,0 +1,15 @@
+.more-text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  display: flex;
+  padding-left: 8px;
+  gap: 16px;
+
+  &__icon {
+    display: inline-block;
+    color: #41f6d7;
+    transform: rotate(90deg);
+  }
+}
