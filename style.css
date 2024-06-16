@@ -641,18 +641,21 @@ li {
   transition-duration: 0.5s; }
   .mobile-menu__content {
     height: 100%;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-right: 24px;
     padding-left: 24px;
+    padding-bottom: 32px;
     box-sizing: border-box;
     background-color: white;
     transition-duration: 0.5s; }
   .mobile-menu__main {
-    padding-top: 46px; }
+    padding-top: 20px; }
   .mobile-menu__flex {
+    height: 95%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: calc(100vh - 770px); }
+    justify-content: space-between; }
   @media (min-width: 768px) and (max-width: 1439px) {
     .mobile-menu {
       left: -400px;
@@ -674,7 +677,9 @@ li {
         padding-top: 30px;
         box-sizing: border-box; }
       .mobile-menu__main {
-        padding-top: 36px; } }
+        padding-top: 36px; }
+      .mobile-menu__flex {
+        height: 87vh; } }
 
 .menu-header {
   display: flex;
@@ -693,16 +698,21 @@ li {
 
 .list {
   list-style-type: none;
-  z-index: 100; }
+  z-index: 100;
+  height: 364px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 32px; }
   .list__item {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: -0.2px;
-    height: 32px;
+    height: 24px;
     font-weight: 500;
     transition-duration: 1s;
     display: flex;
-    margin-bottom: 24px; }
+    align-items: center; }
     .list__item::before {
       content: '';
       border-right: 4px solid;
@@ -711,8 +721,9 @@ li {
       border-color: #41f6d7;
       opacity: 0;
       transition-duration: 200ms;
-      position: absolute;
-      left: 0; }
+      position: relative;
+      right: 28px;
+      height: 32px; }
   .radio-button:checked + .list__item {
     opacity: 0.5;
     transition-duration: 1s; }
@@ -741,7 +752,7 @@ li {
   text-decoration: none; }
 
 .footer-menu__position-number {
-  padding-bottom: 40px; }
+  padding-bottom: 8px; }
 
 .footer-menu__phone-number {
   font-size: 24px;
@@ -760,6 +771,10 @@ li {
   .radio-button:checked + .footer-menu__lang {
     opacity: 0.5;
     transition-duration: 0.8s; }
+
+@media (min-width: 768px) {
+  .footer-menu__position-number {
+    padding-bottom: 40px; } }
 
 .body {
   position: relative;
@@ -1084,7 +1099,8 @@ li {
   text-decoration: none;
   color: black;
   border: none;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  outline: none !important; }
   .more-content__icon {
     display: inline-block;
     color: #41f6d7;
