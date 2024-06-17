@@ -3,13 +3,22 @@
   line-height: 24px;
   letter-spacing: -0.2px;
   font-weight: 500;
-  display: flex;
   padding-left: 8px;
   gap: 16px;
-
+  text-decoration: none;
+  color: $black;
+  border: none;
+  background-color: $background;
+  outline: none !important;
+  transition-duration: 0.5s;
+  display: flex;
   &__icon {
     display: inline-block;
     color: #41f6d7;
     transform: rotate(90deg);
+    transition-duration: 0.5s;
+  }
+
+  @media (min-width: 768px) {
   }
 }

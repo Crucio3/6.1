@@ -10,22 +10,25 @@
 
   &__content {
     height: 100%;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-right: 24px;
     padding-left: 24px;
+    padding-bottom: 32px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: $white;
     transition-duration: 0.5s;
   }
 
   &__main {
-    padding-top: 46px;
+    padding-top: 20px;
   }
 
   &__flex {
+    height: 95%;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: calc(100vh - 770px);
+    justify-content: space-between;
   }
 
   @media (min-width: 768px) and (max-width: 1439px) {
@@ -35,8 +38,8 @@
     width: 320px;
     &__content {
       width: 320px;
-      background-color: white;
-      box-shadow: 20px 0 52px 0px #0e185033;
+      background-color: $white;
+      box-shadow: 20px 0 52px 0px $box-shadow;
       padding-bottom: 32px;
     }
   }
@@ -53,6 +56,10 @@
 
     &__main {
       padding-top: 36px;
+    }
+
+    &__flex {
+      height: 87vh;
     }
   }
 }

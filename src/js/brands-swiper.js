@@ -1,28 +1,3 @@
-let init = false
-let swiper
-function swiperCard() {
-  if (window.innerWidth <= 768) {
-    if (!init) {
-      init = true
-      swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: 'true'
-        },
-        slidesPerView: 'auto',
-        spaceBetween: 16
-      })
-    }
-  } else if (init) {
-    swiper.destroy()
-
-    init = false
-  }
-}
-swiperCard()
-window.addEventListener('resize', swiperCard)
-
 let tabl = document.querySelector('.brands')
 let toggleButton = document.querySelector('.brands__more-content')
 let contentButton = toggleButton.querySelector('.more-content__text')

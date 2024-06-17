@@ -1,6 +1,3 @@
-$turquoise: #d9fff5;
-$gray: #eaeaea;
-
 .header {
   margin: 0;
   height: 88px;
@@ -87,6 +84,7 @@ $gray: #eaeaea;
     }
 
     &__burger {
+      outline: none;
       &::after {
         content: '';
         height: 32px;

@@ -1,7 +1,7 @@
 .technic {
   height: 204px;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: $background;
   box-sizing: border-box;
   &__wrapper {
     padding-top: 16px;
@@ -12,11 +12,11 @@
     height: 72px !important;
   }
   &__text {
-    border: 1px solid #eaeaea;
+    border: 1px solid $gray;
     border-radius: 6px;
     width: 206px;
     height: 128px;
-    background-color: white;
+    background-color: $white;
     padding: 16px 16px;
     display: flex;
     justify-content: space-between;
@@ -32,7 +32,7 @@
   &__circal {
     height: 36px;
     width: 36px;
-    border: 2px solid #ff3e79;
+    border: 2px solid $Fuchsi;
     border-radius: 20px;
     display: flex;
     align-self: flex-end;
@@ -41,8 +41,8 @@
       content: '';
       width: 6px;
       height: 6px;
-      border-top: 2px solid #ff3e79;
-      border-right: 2px solid #ff3e79;
+      border-top: 2px solid $Fuchsi;
+      border-right: 2px solid $Fuchsi;
       rotate: 45deg;
       position: absolute;
       right: 35px;

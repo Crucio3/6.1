@@ -1,11 +1,18 @@
-$bgColor: White;
-$text: black;
+$white: White;
+$black: black;
+$Fuchsi: #ff3e79;
+$background: #f8f8f8;
+$gray: #eaeaea;
+$green: #41f6d7;
+$place-holder: #b5b6bc;
+$box-shadow: #0e185033;
+$turquoise: #d9fff5;
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'TT Lakes';
-  background-color: #f8f8f8;
+  background-color: $background;
 }
 
 h1 {
@@ -21,7 +28,7 @@ p {
   margin: 0;
   font-size: 14px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  color: $black;
   line-height: 18px;
   line-height: 16px;
 }
@@ -55,8 +62,12 @@ li {
 @import './footer.scss';
 @import './open-menu.scss';
 @import './flex-button.scss';
-@import './menu-open.scss';
+@import './button-style.scss';
 @import './technic.scss';
 @import './brands.scss';
-@import './button-style.scss';
 @import './full-technic.scss';
+@import './call.scss';
+@import './modal-open.scss';
+@import './feedback.scss';
+@import './content.scss';
+@import './prices.scss';

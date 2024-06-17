@@ -1,0 +1,241 @@
+.prices {
+  height: 250px;
+  width: 100%;
+  background-color: $background;
+  box-sizing: border-box;
+
+  &__wrapper {
+    padding-top: 16px;
+  }
+
+  &__slide {
+    width: 260px !important;
+    height: 200px !important;
+    background-color: $white;
+    border-radius: 6px;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  &__slide span {
+    color: $place-holder;
+    padding-bottom: 4px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &__type {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  &__price {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  &__time {
+    font-size: 14px;
+    padding-bottom: 16px;
+  }
+
+  &__header {
+    display: none;
+  }
+
+  &__order {
+    background-color: $Fuchsi;
+    font-family: 'TT Lakes';
+    padding-left: 10px;
+    color: $white;
+    font-size: 12px;
+    width: 136px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-weight: 600;
+    white-space: -0.15px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+
+    &::after {
+      content: '';
+      background-color: $white;
+      border: 1px solid $white;
+      width: 7px;
+      border-radius: 3px;
+      transform: rotate(35deg);
+      position: relative;
+      left: 26px;
+      top: -2px;
+    }
+
+    &::before {
+      content: '';
+      background-color: $white;
+      border: 1px solid $white;
+      width: 7px;
+      border-radius: 3px;
+      transform: rotate(-35deg);
+      position: relative;
+      left: 100px;
+      top: 2px;
+    }
+  }
+
+  &__button-position {
+    position: absolute !important;
+    bottom: 110px;
+  }
+
+  &__pagination {
+    position: absolute !important;
+    top: 225px !important;
+  }
+
+  &__NDS {
+    padding-bottom: 16px;
+  }
+
+  &__comershial {
+    font-weight: 500;
+    position: relative;
+    width: 192px;
+  }
+
+  &__comershial-icon {
+    display: flex;
+    position: absolute;
+    transform: rotate(90deg);
+    right: 70px;
+    bottom: 10px;
+    &::after {
+      content: '';
+      background-color: $Fuchsi;
+      border: 1px solid $Fuchsi;
+      width: 7px;
+      border-radius: 3px;
+      transform: rotate(45deg);
+      position: relative;
+    }
+
+    &::before {
+      content: '';
+      background-color: $Fuchsi;
+      border: 1px solid $Fuchsi;
+      width: 7px;
+      border-radius: 3px;
+      transform: rotate(-45deg);
+      position: relative;
+      right: -3px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 380px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: 0 !important;
+
+    &__wrapper {
+      height: 300px !important;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &__slide {
+      width: 100% !important;
+      height: 64px !important;
+      display: flex;
+      border-radius: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__slide span {
+      display: none;
+    }
+
+    &__tabl {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid $gray;
+      justify-content: space-between;
+      padding-right: 160px;
+    }
+
+    &__type {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 348px;
+    }
+
+    &__price {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 74px;
+    }
+
+    &__time {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      width: 81px;
+    }
+
+    &__header {
+      padding: 16px;
+      box-sizing: border-box;
+
+      width: 100% !important;
+      height: 64px !important;
+      display: flex;
+      border-radius: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none;
+    }
+
+    &__header &__tabl {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-right: 160px;
+      border: none;
+    }
+
+    &__header &__type {
+      color: $place-holder;
+    }
+
+    &__header &__price {
+      color: $place-holder;
+    }
+
+    &__header &__time {
+      color: $place-holder;
+    }
+
+    &__NDS {
+      padding-top: 24px;
+      width: 500px;
+    }
+
+    &__comershial {
+      width: 316px;
+    }
+
+    &__comershial-icon {
+      right: 0px;
+    }
+  }
+}

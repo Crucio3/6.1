@@ -7,9 +7,9 @@
   line-height: 24px;
   white-space: -0.2px;
   font-weight: 400;
-  color: #7e7e82;
-  background: linear-gradient(to right, #f8f8f8 0%, white 80%);
-  border-top: 1px solid #d9fff5;
+  color: $place-holder;
+  background: linear-gradient(to right, $background 0%, $white 80%);
+  border-top: 1px solid $turquoise;
 
   @media (min-width: 768px) and (max-width: 1439px) {
     padding-right: 24px;

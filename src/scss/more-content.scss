@@ -7,13 +7,14 @@
   padding-left: 8px;
   gap: 16px;
   text-decoration: none;
-  color: black;
+  color: $black;
   border: none;
-  background-color: #f8f8f8;
+  background-color: $background;
+  outline: none !important;
 
   &__icon {
     display: inline-block;
-    color: #41f6d7;
+    color: $green;
     transform: rotate(90deg);
     transition-duration: 0.5s;
   }

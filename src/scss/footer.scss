@@ -8,6 +8,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid $turquoise;
+  padding-top: 16px;
+  padding-right: 4px;
+  padding-left: 4px;
+  box-sizing: border-box;
 
   &__text {
     width: 100%;
@@ -19,5 +24,13 @@
 
   @media (min-width: 768px) {
     flex-direction: row;
+    padding-left: 24px;
+    padding-right: 24px;
+    &__text1 {
+      text-align: left;
+    }
+    &__text3 {
+      text-align: right;
+    }
   }
 }
