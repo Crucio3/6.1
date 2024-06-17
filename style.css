@@ -1088,7 +1088,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-top: 1px solid #d9fff5;
+  padding-top: 16px;
+  padding-right: 4px;
+  padding-left: 4px;
+  box-sizing: border-box; }
   .footer__text {
     width: 100%;
     display: flex;
@@ -1097,7 +1102,13 @@ li {
     text-align: center; }
   @media (min-width: 768px) {
     .footer {
-      flex-direction: row; } }
+      flex-direction: row;
+      padding-left: 24px;
+      padding-right: 24px; }
+      .footer__text1 {
+        text-align: left; }
+      .footer__text3 {
+        text-align: right; } }
 
 .open-menu {
   z-index: 1000;
@@ -1600,6 +1611,8 @@ li {
   .prices__time {
     font-size: 14px;
     padding-bottom: 16px; }
+  .prices__header {
+    display: none; }
   .prices__order {
     background-color: #ff3e79;
     font-family: 'TT Lakes';
@@ -1646,15 +1659,15 @@ li {
     top: 225px !important; }
   @media (min-width: 768px) {
     .prices {
-      height: 335px;
+      height: 380px;
       width: 100%;
       margin-right: auto;
-      margin-left: 0 !important;
-      margin-bottom: 24px; }
+      margin-left: 0 !important; }
       .prices__wrapper {
         height: 300px !important;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        padding: 0; }
       .prices__slide {
         width: 100% !important;
         height: 64px !important;
@@ -1669,7 +1682,7 @@ li {
         width: 100%;
         border-bottom: 1px solid #eaeaea;
         justify-content: space-between;
-        padding-right: 230px; }
+        padding-right: 160px; }
       .prices__type {
         padding: 0;
         display: flex;
@@ -1684,7 +1697,29 @@ li {
         padding: 0;
         display: flex;
         align-items: center;
-        width: 81px; } }
+        width: 81px; }
+      .prices__header {
+        padding: 16px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: 64px !important;
+        display: flex;
+        border-radius: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none; }
+      .prices__header .prices__tabl {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-right: 160px;
+        border: none; }
+      .prices__header .prices__type {
+        color: #7e7e82; }
+      .prices__header .prices__price {
+        color: #7e7e82; }
+      .prices__header .prices__time {
+        color: #7e7e82; } }
 
 
 /*# sourceMappingURL=style.css.map*/
