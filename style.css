@@ -611,7 +611,7 @@ p {
   margin: 0;
   font-size: 14px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  color: black;
   line-height: 18px;
   line-height: 16px; }
 
@@ -646,7 +646,7 @@ li {
     padding-left: 24px;
     padding-bottom: 32px;
     box-sizing: border-box;
-    background-color: white;
+    background-color: White;
     transition-duration: 0.5s; }
   .mobile-menu__main {
     padding-top: 20px; }
@@ -664,7 +664,7 @@ li {
       width: 320px; }
       .mobile-menu__content {
         width: 320px;
-        background-color: white;
+        background-color: White;
         box-shadow: 20px 0 52px 0px #0e185033;
         padding-bottom: 32px; } }
   @media (min-width: 1440px) {
@@ -965,9 +965,9 @@ li {
     padding: 8px 16px; }
   .slide-menu__active {
     padding: 6px 14px;
-    border: 2px solid #b8ffec;
+    border: 2px solid #d9fff5;
     border-radius: 6px;
-    background-color: #ffffff; }
+    background-color: White; }
   @media (min-width: 768px) and (max-width: 1439px) {
     .slide-menu {
       padding-bottom: 32px;
@@ -1015,8 +1015,8 @@ li {
   line-height: 24px;
   white-space: -0.2px;
   font-weight: 400;
-  color: #7e7e82;
-  background: linear-gradient(to right, #f8f8f8 0%, white 80%);
+  color: #b5b6bc;
+  background: linear-gradient(to right, #f8f8f8 0%, White 80%);
   border-top: 1px solid #d9fff5; }
   @media (min-width: 768px) and (max-width: 1439px) {
     .swiper-title {
@@ -1146,7 +1146,7 @@ li {
     border-radius: 6px;
     width: 206px;
     height: 128px;
-    background-color: white;
+    background-color: White;
     padding: 16px 16px;
     display: flex;
     justify-content: space-between; }
@@ -1291,7 +1291,7 @@ li {
   height: 100vh;
   padding: 24px 16px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: White;
   position: fixed;
   right: -600px;
   top: 0;
@@ -1351,7 +1351,7 @@ li {
   .call__submit {
     background-color: #ff3e79;
     padding-left: 10px;
-    color: #ffffff;
+    color: White;
     font-size: 12px;
     width: 136px;
     height: 32px;
@@ -1365,8 +1365,8 @@ li {
     font-family: 'TT Lakes'; }
     .call__submit::after {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(35deg);
@@ -1375,8 +1375,8 @@ li {
       top: -2px; }
     .call__submit::before {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(-35deg);
@@ -1389,7 +1389,8 @@ li {
   @media (min-width: 768px) {
     .call {
       width: 400px;
-      padding-top: 32px; }
+      padding-top: 32px;
+      box-shadow: -20px 0 52px 0px #0e185033; }
       .call__close {
         position: absolute;
         right: 430px; } }
@@ -1404,7 +1405,7 @@ li {
   height: 100vh;
   padding: 24px 16px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: White;
   position: fixed;
   right: -600px;
   top: 0;
@@ -1485,7 +1486,7 @@ li {
       transform: translateY(-35px); }
   .feedback__inform {
     font-size: 14px;
-    color: #7e7e82;
+    color: #eaeaea;
     padding-top: 16px;
     padding-bottom: 18px; }
   .feedback__warning {
@@ -1493,7 +1494,7 @@ li {
   .feedback__order {
     background-color: #ff3e79;
     padding-left: 10px;
-    color: #ffffff;
+    color: White;
     font-size: 12px;
     width: 136px;
     height: 32px;
@@ -1506,8 +1507,8 @@ li {
     white-space: -0.15px; }
     .feedback__order::after {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(35deg);
@@ -1516,8 +1517,8 @@ li {
       top: -2px; }
     .feedback__order::before {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(-35deg);
@@ -1530,7 +1531,8 @@ li {
   @media (min-width: 768px) {
     .feedback {
       width: 400px;
-      padding-top: 32px; }
+      padding-top: 32px;
+      box-shadow: -20px 0 52px 0px #0e185033; }
       .feedback__close {
         position: absolute;
         right: 430px; } }
@@ -1593,13 +1595,13 @@ li {
   .prices__slide {
     width: 260px !important;
     height: 200px !important;
-    background-color: white;
+    background-color: White;
     border-radius: 6px;
     padding: 16px;
     box-sizing: border-box;
     position: relative; }
   .prices__slide span {
-    color: #7e7e82;
+    color: #b5b6bc;
     padding-bottom: 4px;
     font-size: 14px;
     line-height: 16px; }
@@ -1618,7 +1620,7 @@ li {
     background-color: #ff3e79;
     font-family: 'TT Lakes';
     padding-left: 10px;
-    color: #ffffff;
+    color: White;
     font-size: 12px;
     width: 136px;
     height: 32px;
@@ -1634,8 +1636,8 @@ li {
     right: 16px; }
     .prices__order::after {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(35deg);
@@ -1644,8 +1646,8 @@ li {
       top: -2px; }
     .prices__order::before {
       content: '';
-      background-color: white;
-      border: 1px solid #ffffff;
+      background-color: White;
+      border: 1px solid White;
       width: 7px;
       border-radius: 3px;
       transform: rotate(-35deg);
@@ -1672,16 +1674,16 @@ li {
     bottom: 10px; }
     .prices__comershial-icon::after {
       content: '';
-      background-color: red;
-      border: 1px solid red;
+      background-color: #ff3e79;
+      border: 1px solid #ff3e79;
       width: 7px;
       border-radius: 3px;
       transform: rotate(45deg);
       position: relative; }
     .prices__comershial-icon::before {
       content: '';
-      background-color: red;
-      border: 1px solid red;
+      background-color: #ff3e79;
+      border: 1px solid #ff3e79;
       width: 7px;
       border-radius: 3px;
       transform: rotate(-45deg);
@@ -1745,11 +1747,11 @@ li {
         padding-right: 160px;
         border: none; }
       .prices__header .prices__type {
-        color: #7e7e82; }
+        color: #b5b6bc; }
       .prices__header .prices__price {
-        color: #7e7e82; }
+        color: #b5b6bc; }
       .prices__header .prices__time {
-        color: #7e7e82; }
+        color: #b5b6bc; }
       .prices__NDS {
         padding-top: 24px;
         width: 500px; }
