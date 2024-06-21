@@ -7,11 +7,13 @@ buttonOpen.addEventListener('click', function (evt) {
   menu.classList.add('open-menu')
   body.style.opacity = 0.2
   evt.stopPropagation()
+  document.body.style.overflow = 'hidden'
 })
 
 function Close() {
   menu.classList.remove('open-menu')
   body.style.opacity = 1
+  document.body.style.overflow = 'visible'
 }
 
 let buttonClose = document.querySelector('.menu-close')

@@ -8,6 +8,7 @@ for (let i = 0; i < buttonOpen.length; i++) {
     evt.preventDefault()
     call.classList.add('open-modal')
     body.style.opacity = 0.2
+    document.body.style.overflow = 'hidden'
     if (window.innerWidth > 1439) {
       menu.style.opacity = 0.2
     }
@@ -19,6 +20,7 @@ function Close() {
   call.classList.remove('open-modal')
   body.style.opacity = 1
   menu.style.opacity = 1
+  document.body.style.overflow = 'visible'
 }
 
 let buttonClose = document.querySelector('.call-close')
@@ -31,6 +33,13 @@ buttonClose.addEventListener('click', function (evt) {
 document.addEventListener('keydown', function (evt) {
   if (evt.key === 'Escape') {
     evt.preventDefault()
+    Close()
+  }
+})
+
+document.addEventListener('click', function (evt) {
+  let click = evt.composedPath().includes(call)
+  if (!click) {
     Close()
   }
 })

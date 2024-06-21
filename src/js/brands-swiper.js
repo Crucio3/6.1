@@ -5,13 +5,14 @@ let icon = toggleButton.querySelector('.more-content__icon')
 
 function toggleContent() {
   if (contentButton.textContent === 'Показать все') {
-    tabl.classList.add('full-brands')
+    let contentHeight = tabl.scrollHeight
+    tabl.style.height = contentHeight + 'px'
     contentButton.textContent = 'Скрыть'
     icon.style.transform = 'rotate(270deg)'
   } else {
-    tabl.classList.remove('full-brands')
     contentButton.textContent = 'Показать все'
     icon.style.transform = 'rotate(90deg)'
+    tabl.style.height = 180 + 'px'
   }
 }
 

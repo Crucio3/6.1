@@ -46,7 +46,8 @@
 
   @media (min-width: 1440px) {
     width: 320px;
-    position: static;
+    position: fixed;
+    top: 0;
     height: auto;
     z-index: 200;
     &__content {

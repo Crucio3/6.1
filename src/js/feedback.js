@@ -8,6 +8,7 @@ for (let i = 0; i < buttonOpen.length; i++) {
     evt.preventDefault()
     feedback.classList.add('open-modal')
     body.style.opacity = 0.2
+    document.body.style.overflow = 'hidden'
     if (window.innerWidth > 1439) {
       menu.style.opacity = 0.2
     }
@@ -20,6 +21,7 @@ function Close() {
   feedback.classList.remove('open-modal')
   body.style.opacity = 1
   menu.style.opacity = 1
+  document.body.style.overflow = 'visible'
 }
 
 let buttonClose = document.querySelector('.feedback-close')
@@ -36,10 +38,9 @@ document.addEventListener('keydown', function (evt) {
   }
 })
 
-document.body.addEventListener('click', function (evt) {
-  if (!call.contains(evt.target) && !buttonOpen.contains(evt.target)) {
-    if (call.classList.contains('open-call')) {
-      Close()
-    }
+document.addEventListener('click', function (evt) {
+  let click = evt.composedPath().includes(feedback)
+  if (!click) {
+    Close()
   }
 })

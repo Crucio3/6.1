@@ -37,9 +37,9 @@
       border-top: 2px solid $Fuchsi;
       border-right: 2px solid $Fuchsi;
       rotate: 45deg;
-      position: absolute;
-      right: 35px;
-      top: 32px;
+      position: relative;
+      left: 12px;
+      top: 14px;
     }
   }
 
@@ -49,25 +49,29 @@
   }
   @media (min-width: 768px) and (max-width: 1439px) {
     height: 180px;
-    width: 768px;
+    width: 100%;
     margin-right: auto;
     margin-left: 0 !important;
     margin-bottom: 24px;
     transition-duration: 0.5s;
 
     &__wrapper {
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 16px 24px;
-      height: 340px !important;
+      gap: 16px 24px !important;
+      height: 10px;
     }
 
     &__slide {
-      width: 224px !important;
+      width: 30% !important;
+      max-width: 250px;
+      min-width: 224px;
     }
 
     &__image {
-      width: 190px;
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 
