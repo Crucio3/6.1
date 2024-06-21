@@ -625,7 +625,7 @@ li {
 
 @media (min-width: 1440px) {
   .servise {
-    display: flex;
+    position: relative;
     width: 1440px;
     margin-left: auto;
     margin-right: auto; } }
@@ -670,7 +670,8 @@ li {
   @media (min-width: 1440px) {
     .mobile-menu {
       width: 320px;
-      position: static;
+      position: fixed;
+      top: 0;
       height: auto;
       z-index: 200; }
       .mobile-menu__content {
@@ -782,7 +783,8 @@ li {
   @media (min-width: 1440px) {
     .body {
       width: 1120px;
-      position: static; } }
+      position: absolute;
+      left: 320px; } }
 
 .header {
   margin: 0;
@@ -1058,16 +1060,6 @@ li {
     .more-content {
       display: flex; } }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .full-brands {
-    height: 360px !important;
-    transition-duration: 0.5s; } }
-
-@media (min-width: 1440px) {
-  .full-brands {
-    height: 270px !important;
-    transition-duration: 0.5s; } }
-
 .swiper-position {
   padding-left: 16px;
   padding-right: 16px;
@@ -1140,7 +1132,7 @@ li {
     padding-top: 16px; }
   .technic__slide {
     width: 240px !important;
-    height: 72px !important; }
+    height: 160px !important; }
   .technic__text {
     border: 1px solid #eaeaea;
     border-radius: 6px;
@@ -1169,16 +1161,16 @@ li {
       border-top: 2px solid #ff3e79;
       border-right: 2px solid #ff3e79;
       rotate: 45deg;
-      position: absolute;
-      right: 35px;
-      top: 121px; }
+      position: relative;
+      left: 12px;
+      top: 14px; }
   .technic__pagination {
     position: absolute !important;
     top: 188px !important; }
   @media (min-width: 768px) and (max-width: 1439px) {
     .technic {
       height: 184px;
-      width: 768px;
+      width: 100%;
       margin-right: auto;
       margin-left: 0 !important;
       margin-bottom: 24px;
@@ -1187,11 +1179,15 @@ li {
         display: flex;
         flex-wrap: wrap;
         gap: 16px 24px;
-        height: 688px !important; }
+        height: 10px; }
       .technic__slide {
-        width: 224px !important; }
+        width: 30% !important;
+        max-width: 250px;
+        min-width: 224px; }
       .technic__text {
-        width: 190px; } }
+        width: 100%;
+        height: 160px;
+        box-sizing: border-box; } }
   @media (min-width: 1440px) {
     .technic {
       height: 184px;
@@ -1239,29 +1235,33 @@ li {
       border-top: 2px solid #ff3e79;
       border-right: 2px solid #ff3e79;
       rotate: 45deg;
-      position: absolute;
-      right: 35px;
-      top: 32px; }
+      position: relative;
+      left: 12px;
+      top: 14px; }
   .brands__pagination {
     position: absolute !important;
     top: 100px !important; }
   @media (min-width: 768px) and (max-width: 1439px) {
     .brands {
       height: 180px;
-      width: 768px;
+      width: 100%;
       margin-right: auto;
       margin-left: 0 !important;
       margin-bottom: 24px;
       transition-duration: 0.5s; }
       .brands__wrapper {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 16px 24px;
-        height: 340px !important; }
+        gap: 16px 24px !important;
+        height: 10px; }
       .brands__slide {
-        width: 224px !important; }
+        width: 30% !important;
+        max-width: 250px;
+        min-width: 224px; }
       .brands__image {
-        width: 190px; } }
+        width: 100%;
+        box-sizing: border-box; } }
   @media (min-width: 1440px) {
     .brands {
       height: 180px;
@@ -1276,16 +1276,6 @@ li {
         gap: 16px 32px;
         height: 252px !important; } }
 
-@media (min-width: 768px) and (max-width: 1439px) {
-  .full-technic {
-    height: 720px !important;
-    transition-duration: 0.5s; } }
-
-@media (min-width: 1440px) {
-  .full-technic {
-    height: 540px !important;
-    transition-duration: 0.5s; } }
-
 .call {
   width: 100%;
   height: 100vh;
@@ -1293,7 +1283,7 @@ li {
   box-sizing: border-box;
   background-color: White;
   position: fixed;
-  right: -600px;
+  right: -130vw;
   top: 0;
   z-index: 2000;
   transition-duration: 0.5s; }
@@ -1407,7 +1397,7 @@ li {
   box-sizing: border-box;
   background-color: White;
   position: fixed;
-  right: -600px;
+  right: -130vw;
   top: 0;
   z-index: 2000;
   transition-duration: 0.5s; }
